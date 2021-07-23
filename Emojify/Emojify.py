@@ -216,16 +216,8 @@ def pretrained_embedding_layer(word_to_vec_map, word_to_index):
     
     return embedding_layer
 
-
-# In[21]:
-
-
 embedding_layer = pretrained_embedding_layer(word_to_vec_map, word_to_index)
 print("weights[0][1][3] =", embedding_layer.get_weights()[0][1][3])
-
-
-# In[22]:
-
 
 def Emojify_V2(input_shape, word_to_vec_map, word_to_index):
     """
